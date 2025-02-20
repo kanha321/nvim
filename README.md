@@ -1,1 +1,1 @@
-# My nvim config for java development environment
+# My nvim config for java development
