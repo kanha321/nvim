@@ -65,7 +65,7 @@ function RunCode()
         cpp = "g++ % -o a.out && ./a.out || echo 'Compilation failed!'",
         asm = "gcc % -nostdlib -static -o a.out && ./a.out || echo 'Compilation failed!'",
         sh = "if [ -x % ]; then ./%; else sh %; fi",
-        java = "mkdir -p out && javac -d out " .. vim.fn.expand('%:p') .. " && java -cp out " .. vim.fn.expand('%:t:r'),
+        java = "clear && mkdir -p out && javac -d out " .. vim.fn.expand('%:p') .. " && java -cp out " .. vim.fn.expand('%:t:r'),
     }
 
     local command = commands[filetype]
