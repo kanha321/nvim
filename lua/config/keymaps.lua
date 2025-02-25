@@ -94,4 +94,3 @@ vim.api.nvim_create_autocmd("FileType", {
         vim.keymap.set("n", "h", api.node.navigate.parent_close, { buffer = true, desc = "Close Directory" })
     end
 })
-
